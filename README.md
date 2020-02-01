@@ -19,4 +19,4 @@ Each snapshot above is a time step of the simulation shown in a 750 by 750 windo
 
 update_trees(trees,p_cools,p_grows,p_ignites,p_jump) takes the parameter trees, which is a 2D matrix representing the current state of our forest. The parameters p_cools, p_grows, p_ignites represent decimal probabilities from 0 to 1 that indicate the likelihood of a tree cooling, growing, or igniting, respectively. This function update_trees returns a new 2D matrix new_trees representing the forest during the next time step (i.e. after one day has passed).
 
-jump_feature(trees,new_trees,row,col,p_jump) implements a jump feature for a specific tree, the tree at trees[row][col]. new_trees represents the 2D matrix for the next stage of the forest. p_jump represents a decimal probability from 0.0 to 1.0 that the jump feature will occur.
+jump_feature(trees,new_trees,row,col,p_jump) implements a jump feature for a specific tree. new_trees represents the 2D matrix for the next stage of the forest. p_jump represents a decimal probability from 0.0 to 1.0 that the jump feature will occur.
